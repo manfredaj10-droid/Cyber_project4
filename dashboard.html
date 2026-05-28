@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+
+<style>
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.container{
+  width: 500px;
+  padding: 40px;
+  text-align: center;
+  background-color: rgba(15, 23, 42, 0.95);
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(37, 99, 235, 0.4);
+}
+
+.icon{
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+
+h1{
+  color: #60a5fa;
+  margin-bottom: 15px;
+}
+
+p{
+  color: #cbd5e1;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.features{
+  text-align: left;
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.features h3{
+  color: #93c5fd;
+  margin-bottom: 10px;
+}
+
+.features ul{
+  padding-left: 20px;
+}
+
+.features li{
+  margin-bottom: 8px;
+}
+
+.logout-btn{
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.logout-btn:hover{
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="icon">🛡️</div>
+
+  <h1>Dashboard</h1>
+
+  <p>Welcome! You have successfully logged into the Secure Login System.</p>
+
+  <div class="features">
+    <h3>Security Features Enabled</h3>
+    <ul>
+      <li> Password Hashing (bcrypt)</li>
+      <li> SQLite Database Storage</li>
+      <li> Session-Based Authentication</li>
+      <li> SQL Injection Protection</li>
+      <li> Secure Login Validation</li>
+    </ul>
+  </div>
+
+  <a href="/logout" class="logout-btn">Logout</a>
+
+</div>
+
+</body>
+</html>
